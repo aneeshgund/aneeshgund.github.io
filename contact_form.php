@@ -1,9 +1,9 @@
 <?php
 // Fetching Values from URL.
-$name = $_POST['name1'];
-$email = $_POST['email1'];
-$message = $_POST['message1'];
-$contact = $_POST['contact1'];
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+$contact = $_POST['contact'];
 $email = filter_var($email, FILTER_SANITIZE_EMAIL); // Sanitizing E-mail.
 // After sanitization Validation is performed
 if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
